@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7e4d4;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: max-content;
+  margin: auto;
+  width: calc(100% - 40px);
+}
+
+@media (min-width: 520px) {
+  form {
+    width: 480px;
+  }
+}
+
+h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #467745;
+}
+
+@media (min-width: 520px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
+.subject-input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  height: 64px;
+  width: 100%;
+  border: none;
+}
+
+::placeholder {
+  color: #467745;
+  padding-left: 20px;
+}
+
+textarea::placeholder {
+  padding-top: 20px;
+}
+
+textarea {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  height: 120px;
+  width: 100%;
+  border: none;
+  resize: none;
+}
+
+.section-checkbox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.my-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+label,
+a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #467745;
+}
+
+button {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  font-size: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 280px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #467745;
+  color: #f7e4d4;
+  border: none;
+}
+
